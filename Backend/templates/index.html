@@ -1,1 +1,44 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrismaLearn</title>
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/favicon-16x16.png') }}">
+<link rel="manifest" href="{{ url_for('static', filename='assets/site.webmanifest') }}">
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/robinReading.png') }}">
+</head>
+
+<body>
+
+<video class="bg-video" autoplay muted loop>
+  <source src="{{ url_for('static', filename='assets/vecteezy_white-neon-cubic-frame-waves-background-vj-loop-in-4k_52192939.mp4') }}" type="video/mp4">
+</video>
+
+<div class="content">
+    <h1 class="heading">Welcome to PrismaLearn - Your Ultimate Course Enrollment Destination</h1>
+    <button class="glow-btn">Level Up</button>
+
+    <button class="music-btn" id="musicBtn">🔇</button>
+
+    <audio id="bgMusic" loop>
+  <source src="{{ url_for('static', filename='assets/Spyder On Mission.mp3') }}" type="audio/mp3">
+</audio>
+</div>
+
+
+<script src="{{ url_for('static', filename='script/index.js') }}"></script>
+
+
+</body>
+</html>
+
+

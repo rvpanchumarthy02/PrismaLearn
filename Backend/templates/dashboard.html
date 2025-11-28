@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/dashboard.css') }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/favicon-16x16.png') }}">
+<link rel="manifest" href="{{ url_for('static', filename='assets/site.webmanifest') }}">
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/robinReading.png') }}">
+
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+</header>
+
+<section>
+    <h2>Your Profile</h2>
+    <div id="profileInfo"></div>
+
+    <h2>Your Enrollments</h2>
+    <a href="{{ url_for('enrolled') }}">View Enrolled Courses</a>
+
+    <h2>Available Courses</h2>
+    <a href="{{ url_for('courses') }}">Browse Courses</a>
+</section>
+
+<script src="{{ url_for('static', filename='script/dashboard.js') }}"></script>
+</body>
+</html>

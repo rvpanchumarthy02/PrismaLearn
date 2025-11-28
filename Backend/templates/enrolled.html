@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Enrollments - PrismaLearn</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/dashboard.css') }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/favicon-16x16.png') }}">
+<link rel="manifest" href="{{ url_for('static', filename='assets/site.webmanifest') }}">
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/robinReading.png') }}">
+
+</head>
+<body>
+
+<h1>Your Enrolled Courses</h1>
+
+<div id="enrolledCourses">
+    <!-- JS will fill this -->
+</div>
+
+<a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+
+<script src="{{ url_for('static', filename='script/enrolled.js') }}"></script>
+</body>
+</html>
