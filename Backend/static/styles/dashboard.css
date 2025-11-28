@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body { font-family: sans-serif; padding: 20px; background-color: #f9f9f9; }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+button#logoutBtn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section { max-width: 800px; margin: 0 auto; }
+h2 { margin-top: 30px; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+
+/* Links that look like buttons */
+a[href] {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

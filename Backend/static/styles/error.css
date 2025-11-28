@@ -1,0 +1,59 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  /* Make sure the image filename in your folder matches this EXACTLY */
+  background-image: url("../assets/pngtree-error-illustration-modern-flat-design-concept-of-web-page-design-png-image_4188250.png");
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat;
+  
+  /* Centering Logic */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;  
+}
+
+.error-box {
+  /* Semi-transparent black overlay so text is readable over the image */
+  background: rgba(0, 0, 0, 0.7);  
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+  background-color: #FF3B30; /* Red button */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #d32f2f;
+}
